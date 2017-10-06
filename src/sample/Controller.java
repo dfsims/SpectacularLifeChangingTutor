@@ -1,9 +1,21 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-public class Controller {
+import java.net.URL;
+import java.util.ResourceBundle;
 
+public class Controller implements Initializable {
+    Image image = new Image("resources/dsdt.png");
+    ImageView iv1 = new ImageView();
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        iv1.setImage(image);
+    }
     @FXML
     private void loginButtonHandler()
     {
