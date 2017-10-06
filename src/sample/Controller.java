@@ -9,7 +9,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    Image image = new Image("resources/dsdt.png");
+    Image image = new Image("");
     ImageView iv1 = new ImageView();
 
     @Override
