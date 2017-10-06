@@ -9,12 +9,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    Image image = new Image("");
-    ImageView iv1 = new ImageView();
+//    Image image = new Image("");
+  //  ImageView iv1 = new ImageView();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        iv1.setImage(image);
+        //iv1.setImage(image);
     }
     @FXML
     private void loginButtonHandler()
