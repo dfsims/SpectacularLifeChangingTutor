@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <MenuButton id="sidemenu" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" text="Side Menu" textFill="#2309d9" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <MenuItem id="sidequizzes" mnemonicParsing="false" text="Quizzes" />
+                <MenuItem id="sidechangeAssignment" mnemonicParsing="false" text="Change Assignment" />
+                <MenuItem id="sideChangeLesson" mnemonicParsing="false" text="Change Lesson" />
+                  <MenuItem id="sideLogout" mnemonicParsing="false" text="Logout" />
+              </items>
+            </MenuButton>
+            <Label layoutX="230.0" layoutY="-3.0" prefHeight="34.0" prefWidth="226.0" text="Lesson #2: Exponential Rule" AnchorPane.topAnchor="-3.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.5" layoutY="25.0" orientation="VERTICAL" prefHeight="378.0" prefWidth="640.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <ScrollPane layoutY="-1.0" prefHeight="186.0" prefWidth="638.0">
+                           <content>
+                              <ImageView fitHeight="494.0" fitWidth="638.0" pickOnBounds="true" preserveRatio="true" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TabPane prefHeight="186.0" prefWidth="638.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab id="L1Q1" fx:id="L1Q1" text="Question 1">
+                              <content>
+                                <AnchorPane fx:id="L1QuestionPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab id="L1Q2" fx:id="L1Q2" text="Question 2">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="638.0" />
+                                 </content>
+                              </Tab>
+                              <Tab id="L1Q3" fx:id="L1Q3" text="Question 3">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="638.0" />
+                                 </content>
+                              </Tab>
+                              <Tab id="L1Q4" fx:id="L1Q4" text="Question 4">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab id="L1Q5" fx:id="L1Q5" text="Question 5">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <Button layoutX="559.0" mnemonicParsing="false" onAction="#nextLesson2Handler" text="Next Lesson" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
