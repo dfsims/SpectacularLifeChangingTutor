@@ -83,7 +83,7 @@
                                           <RadioButton fx:id="Q3A" layoutX="14.0" layoutY="42.0" mnemonicParsing="false" onAction="#questionAnswer" text="A" />
                                           <RadioButton fx:id="Q3B" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onAction="#questionAnswer" text="B" />
                                           <RadioButton fx:id="Q3C" layoutX="14.0" layoutY="99.0" mnemonicParsing="false" onAction="#questionAnswer" text="C" />
-                                          <Button layoutX="531.0" layoutY="117.0" mnemonicParsing="false" onAction="#submitAllHandler" prefHeight="26.0" prefWidth="100.0" text="Submit All" />
+                                          <Button fx:id="SubmitAll" layoutX="531.0" layoutY="117.0" mnemonicParsing="false" onAction="#submitAllHandler" prefHeight="26.0" prefWidth="100.0" text="Submit All" />
                                        </children></AnchorPane>
                                  </content>
                               </Tab>
